@@ -1,0 +1,23 @@
+$brand: #00a54e;
+$brand-darker: darken($brand, 20%);
+
+.brand                { color: $brand; }
+
+.bg-brand             { background-color: $brand; }
+.bg-hero              { background-color: rgba(218, 255, 220, 0.73)}
+.bg-light-brand       { background-color: #f5f8fc;}
+
+// Hover text color
+.hover-brand:hover,
+.hover-brand:focus    { color: $brand; }
+
+// Hover background
+.hover-bg-brand:hover,
+.hover-bg-brand:focus { background-color: $brand; }
+
+.hover-bg-dark-brand:hover,
+.hover-bg-dark-brand:focus { background-color: $brand-darker; }
+
+// Border Colors
+.b--brand             { border-color: $brand; }
+

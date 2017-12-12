@@ -1,0 +1,42 @@
+// Custom Borders
+.bb-custom-sm:after {
+  content: '';
+  display: block;
+  height: 6px;
+  margin: 10px auto;
+  width: 60px;
+}
+.bb-custom-sm-tl:after {
+  margin: 10px 0;
+}
+.bb-custom-md:after {
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 20px auto;
+  width: 80px;
+}
+.bb-custom-lg:after {
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 140px auto 40px;
+  width: 400px;
+}
+.bb-custom-brand:after {
+  background: $brand;
+}
+.bb-custom-white:after {
+  background: #fff;
+}
+.bb-custom-gray:after {
+  background: #777777;
+}
+.bb-custom-near-white:after {
+  background: #F4F4F4;
+}
+
+// Hover on Borders
+.hover-ba--brand-darker:hover {
+  border-color: white;
+}

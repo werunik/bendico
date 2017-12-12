@@ -1,0 +1,30 @@
+title: Bendi & Co
+email: info@bendi-co.com
+description: Cultivateurs de relations
+baseurl: ""
+url: "https://www.bendi-co.com"
+phone: "+ 212 661 25 36 18"
+
+collections:
+  posts:
+    permalink: /blog/:title
+  pages:
+    output: true
+    permalink: /:name
+
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: /assets/styles
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/*
+  - README.md

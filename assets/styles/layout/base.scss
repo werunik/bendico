@@ -1,0 +1,59 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.h-191x191 {
+  height: 191px;
+  width: 191px;
+}
+
+// Team Page -> Hover on Pictures
+.img__description_layer {
+  background: rgba(48, 100, 188, 0.67);
+  transition: opacity .2s, visibility .2s;
+}
+.img__wrap:hover .img__description_layer {
+  opacity: 1;
+  visibility: visible;
+}
+.img__description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}
+
+// Slider
+.flickity-enabled .flickity-prev-next-button.next,
+.flickity-enabled .flickity-prev-next-button.previous {
+  background: transparent;
+}
+@media screen and (min-width: 48em) {
+  .flickity-enabled .flickity-prev-next-button.next {
+    right: -40px;
+  }
+  .flickity-enabled .flickity-prev-next-button.previous {
+    left: -40px;
+  }     
+}
+
+@media screen and (min-width: 30em) {
+  .custom-200x200 {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 48em) {
+  .h-191x191 {
+    height: 100%;
+    width: 100%;
+  }
+}
